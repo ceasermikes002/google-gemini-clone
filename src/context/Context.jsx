@@ -17,11 +17,11 @@ const ContextProvider = (props) => {
     }, 75 * index);
   };
 
-  const newChat() => {
-    setLaoding(false)
-    setShowResult(false)
-
-  }
+  const newChat = () => {
+    setLoading(false);
+    setShowResult(false);
+  };
+  
 
   const onSend = async (prompt) => {
     setResultData("");
