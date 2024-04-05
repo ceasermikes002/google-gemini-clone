@@ -1,0 +1,41 @@
+.span {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.card {
+  @apply h-[200px] p-[15px] bg-[#f0f4f9] rounded-[10px] relative cursor-pointer;
+}
+.card-p {
+  @apply text-[#585858] text-[17px];
+}
+.card:hover {
+  background: #dfe4df;
+}
+.input-icon {
+  @apply w-[24px] cursor-pointer;
+}
+.result::-webkit-scrollbar {
+  display: none;
+}
+.hr{
+  @apply rounded-[4px] border-none bg-[#f6f7f8]
+}
+.hr{
+  background: linear-gradient(to right, #9ed7ff, #fff, #9ed7ff);
+  background-size: 800px 50px;
+  height: 20px;
+  animation: load 3s linear infinite;
+}
+
+@keyframes load{
+  0%{
+    background-position: -800px 0;
+  }
+  100%{
+    background-position: 800px 0;
+  }
+}

@@ -1,0 +1,12 @@
+.sidebar {
+  min-height: 100vh !important;
+}
+.icon {
+  @apply w-[20px];
+}
+.recent-entry {
+  @apply flex items-center gap-[10px] p-[10px] pr-[40px] rounded-[50px] text-[#282828] hover:bg-[#e2e6e2];
+}
+.bottom-item {
+  @apply pr-[10px] cursor-pointer;
+}
